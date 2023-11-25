@@ -1,0 +1,18 @@
+uuid: 60fff227-8e3c-4267-80d2-568f1dbb0bcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.car
+id: node.car.title
+field_name: title
+entity_type: node
+bundle: car
+label: 'Identificador del carro'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

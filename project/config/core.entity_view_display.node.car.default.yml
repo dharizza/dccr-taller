@@ -1,0 +1,59 @@
+uuid: b618637f-1eb7-4b17-9eb2-2e4dd2058379
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.car.body
+    - field.field.node.car.field_fotos
+    - field.field.node.car.field_marca
+    - field.field.node.car.field_precio
+    - node.type.car
+  module:
+    - text
+    - user
+id: node.car.default
+targetEntityType: node
+bundle: car
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_fotos:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_marca:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_precio:
+    type: number_decimal
+    label: inline
+    settings:
+      thousand_separator: ' '
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

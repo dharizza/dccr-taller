@@ -1,0 +1,8 @@
+uuid: 968d932e-3f08-48a4-9be5-d25a01d1e8bc
+langcode: en
+status: true
+dependencies: {  }
+name: Marca
+vid: marca
+description: 'Por ejemplo: Toyota, Suzuki, etc.'
+weight: 0

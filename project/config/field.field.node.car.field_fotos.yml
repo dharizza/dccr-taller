@@ -1,0 +1,29 @@
+uuid: e07b0dc1-3fda-4826-96b9-778db9e543b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fotos
+    - media.type.imagen
+    - node.type.car
+id: node.car.field_fotos
+field_name: field_fotos
+entity_type: node
+bundle: car
+label: Fotos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      imagen: imagen
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
